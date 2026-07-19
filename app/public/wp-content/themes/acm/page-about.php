@@ -9,42 +9,14 @@
 get_header();
 ?>
 
-<?php
-	$banner = null;
-	if ( class_exists( 'ACMUtils' ) && function_exists( 'get_field' ) ) {
-		$banner = ACMUtils::get_banner_data( $post->ID );
-	}
-	// Use banner.png from theme img folder as the default banner image.
-	$banner_image = get_template_directory_uri() . '/img/banner.png';
-	$has_acf_banner = ( $banner && ! empty( $banner['image'] ) );
-	if ( $has_acf_banner ) {
-		$banner_image = $banner['image'];
-	}
-?>
-<div class="banner-container">
-	<div class="acm-banner-container"
-		style="background-image: url('<?php echo esc_url( $banner_image ); ?>'); background-size: cover; background-position: center;">
-		<?php if ( $has_acf_banner ) : ?>
-		<div class="gradient-wrapper"></div>
-		<div class="overlay"></div>
-		<div class="row">
-			<div class="columns large-12 medium-12 banner-content">
-				<p class="banner-heading">
-					<small><?php echo esc_html( $banner['title'] ); ?></small>
-				<?php echo esc_html( $banner['sub_title'] ); ?>
-				</p>
-				<p><?php echo esc_html( $banner['description'] ); ?></p>
-			</div>
-		</div>
-		<?php endif; ?>
+
+<div class="row breadcrumb-container" style="margin-top: 1rem;">
+	<div class="columns small-12">
+		<ul class="breadcrumbs">
+			<?php ACMUtils::the_breadcrumb(); ?>
+		</ul>
 	</div>
-	<div class="row breadcrumb-container">
-		<div class="columns small-12">
-			<ul class="breadcrumbs">
-				<?php ACMUtils::the_breadcrumb(); ?>
-			</ul>
-		</div>
-	</div>
+</div>
 	
 	<div id="maincontent" class="row" style="margin-top: 2rem;">
 		<article class="has-edit-button columns large-8 medium-8 small-12 zone-1 reveal-on-scroll"
@@ -79,16 +51,36 @@ get_header();
 					<li style="margin-bottom: 0.5rem;">Strengthen the computing community through student and professional chapters across India, technical workshops, coding events, networking sessions, and mentorship activities</li>
 				</ul>
 				
-				<p style="font-size: 0.875rem; line-height: 1.6; margin-bottom: 2.5rem; color: #000000;">
+				<p style="font-size: 0.875rem; line-height: 1.6; margin-bottom: 1.25rem; color: #000000;">
 					ACM-W India also aims to promote computer literacy, especially in rural India, with the vision of empowering underprivileged women and children and helping them become independent and self-reliant.
 				</p>
+				
+				<h3 style="text-align: left; font-weight: 700; font-size: 20px; margin-top: 2rem; margin-bottom: 1rem; color: #1e293b; font-family: 'Roboto Condensed', Helvetica, Roboto, Arial, sans-serif;">
+					Key Initiatives
+				</h3>
+				<p style="font-size: 0.875rem; line-height: 1.6; margin-bottom: 1.25rem; color: #000000;">
+					ACM-W India focuses strongly on networking, mentorship, and career growth. Signature events include the <strong>All India Celebration of Women in Computing (AICWiC)</strong>, which aims to increase the participation and advancement of women in the technical workforce, and the <strong>ACM-W India Grad Cohort</strong>, a flagship mentoring initiative designed specifically for women graduate students in computing across India.
+				</p>
+
+				<h3 style="text-align: left; font-weight: 700; font-size: 20px; margin-top: 2rem; margin-bottom: 1rem; color: #1e293b; font-family: 'Roboto Condensed', Helvetica, Roboto, Arial, sans-serif;">
+					Leadership (2025&ndash;2027)
+				</h3>
+				<p style="font-size: 0.875rem; line-height: 1.6; margin-bottom: 1.25rem; color: #000000;">
+					ACM-W India is guided by a dedicated executive committee. For the term spanning July 1, 2025, to June 30, 2027, the leadership includes:
+				</p>
+				<ul style="font-size: 0.875rem; line-height: 1.6; margin-bottom: 2.5rem; margin-left: 1.5rem; list-style-type: disc; color: #000000;">
+					<li style="margin-bottom: 0.5rem;"><strong>Chair:</strong> Geetanjali Kale (PICT, Pune)</li>
+					<li style="margin-bottom: 0.5rem;"><strong>Vice-Chair:</strong> Alpana Dubey (Accenture, Bangalore)</li>
+					<li style="margin-bottom: 0.5rem;"><strong>Secretary/Treasurer:</strong> Renuka Sindhghatta Rajan (IBM, Bangalore)</li>
+				</ul>
 			</div>
 
 		</article>
 		
 		<?php get_sidebar('content_right'); ?>
 		
+
 	</div>
-</div>
+
 
 <?php get_footer(); ?>

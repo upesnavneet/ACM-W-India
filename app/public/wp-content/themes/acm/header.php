@@ -240,28 +240,20 @@
 								get_theme_mod( 'logo_image' ) :
 								get_theme_root_uri() . '/acm/img/logo.png';
 						?>
-						<img alt="ACM Logo" height="78" class="logo" title="Home"
+						<img alt="ACM Logo" height="55" class="logo" title="Home" style="margin-top: 8px; margin-bottom: 8px;"
 							src="<?php echo esc_url( $logo ); ?>" />
-						<span class="acmw-title" style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 17px; font-weight: 400; font-style: italic; text-transform: none; letter-spacing: 0; color: #666; margin-left: 45px; white-space: nowrap;">
-							ACM-W India
-						</span>
 					</a>
 				</div>
 				<div class="navbar-header hide-for-large-up">
 					<a href="<?php echo esc_url( get_home_url() ); ?>" style="display: flex; align-items: center; text-decoration: none;">
 						<img alt="ACM Logo" class="img-responsive hide-for-large-up" title="Home"
 							src="<?php echo esc_url( get_theme_root_uri() ); ?>/acm/img/logo.png" style="max-height: 50px; width: auto; float: left; margin-right: 10px;">
-						<span class="acmw-title-mobile" style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 15px; font-weight: 400; font-style: italic; text-transform: none; letter-spacing: 0; color: #ffffff; margin-left: 15px; white-space: nowrap; line-height: 50px;">
-							ACM-W India
-						</span>
 					</a>
 				</div>
 			</div>
 			<div id="acm-description" class="column large-5 show-for-large-up">
 				<div>
-					<?php echo esc_html( get_bloginfo( 'description' ) ); ?>
-					<!-- We're an international society of educators, scientists, technologists and engineers dedicated to the advancement of computer science. We offer a world-class <a href="#">Digital Library</a>, <a href="#">publications</a>, <a href="#">conferences</a>,
-					and more. -->
+					ACM-W India supporting, celebrating, and advocating for Women in Computing.
 				</div>
 			</div>
 			<div id="ctas-and-search" class="column large-5 medium-6 no-pad-left ctas-and-search">
@@ -278,6 +270,12 @@
 					);
 				}
 				?>
+				<div style="float: right; height: 100%; display: flex; align-items: center;">
+					<a href="https://www.linkedin.com/company/acm-w-india/" target="_blank" style="background-color: #005a87; color: #ffffff; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; gap: 6px; padding: 10px 16px; margin-top: 15px; margin-bottom: 15px; font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif; font-weight: 500; font-size: 14px; transition: background-color 0.2s ease;" onmouseover="this.style.backgroundColor='#004b6b'" onmouseout="this.style.backgroundColor='#005a87'" title="LinkedIn">
+						LinkedIn
+						<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom: 1px;"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+					</a>
+				</div>
 			</div>
 		</div>
 		<nav class="top-bar main-nav" data-topbar data-options="is_hover: false">
@@ -311,7 +309,8 @@
 							echo '<li class="menu-item" style="margin-right: 2rem;"><a href="/" style="color:#fff; font-weight:400; font-family:\'Roboto Condensed\', Helvetica, Roboto, Arial, sans-serif; font-size:15px; text-transform:uppercase; text-decoration:none;">Home</a></li>';
 							echo '<li class="menu-item" style="margin-right: 2rem;"><a href="/about/" style="color:#fff; font-weight:400; font-family:\'Roboto Condensed\', Helvetica, Roboto, Arial, sans-serif; font-size:15px; text-transform:uppercase; text-decoration:none;">About</a></li>';
 							echo '<li class="menu-item" style="margin-right: 2rem;"><a href="/executive-committee/" style="color:#fff; font-weight:400; font-family:\'Roboto Condensed\', Helvetica, Roboto, Arial, sans-serif; font-size:15px; text-transform:uppercase; text-decoration:none;">Executive Committee</a></li>';
-							echo '<li class="menu-item"><a href="/flagship-events/" style="color:#fff; font-weight:400; font-family:\'Roboto Condensed\', Helvetica, Roboto, Arial, sans-serif; font-size:15px; text-transform:uppercase; text-decoration:none;">Flagship Events</a></li>';
+							echo '<li class="menu-item" style="margin-right: 2rem;"><a href="/flagship-events/" style="color:#fff; font-weight:400; font-family:\'Roboto Condensed\', Helvetica, Roboto, Arial, sans-serif; font-size:15px; text-transform:uppercase; text-decoration:none;">Flagship Events</a></li>';
+							echo '<li class="menu-item" style="margin-right: 2rem;"><a href="/student-chapters/" style="color:#fff; font-weight:400; font-family:\'Roboto Condensed\', Helvetica, Roboto, Arial, sans-serif; font-size:15px; text-transform:uppercase; text-decoration:none;">Student Chapters</a></li>';
 							echo '</ul></div>';
 						}
 						?>

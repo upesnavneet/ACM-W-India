@@ -1,22 +1,16 @@
 <?php
 /**
- * The main template file
+ * Template Name: Home Page Template
  *
- * This is the most generic template file in a WordPress theme
- * and one of the two required files for a theme (the other being style.css).
- * It is used to display a page when nothing more specific matches a query.
- * e.g., it puts together the home page when no home.php file exists.
- *
- * Learn more: {@link https://codex.wordpress.org/Template_Hierarchy}
+ * This template displays the custom layout previously defined in index.php
+ * for the home page route /home.
  *
  * @package WordPress
  * @subpackage ACM
- * @since ACM 1.0
  */
-get_header();
-?>
 
-<?php
+get_header();
+
 // Use banner.png from theme img folder as the default banner image.
 $banner_image = get_template_directory_uri() . '/img/banner.png';
 $geetangali_kale = get_template_directory_uri() . '/img/executives/geetanjali-kale.jpg';
@@ -55,18 +49,6 @@ $has_text_overlay = (!empty($banner_top_title) || !empty($banner_title) || !empt
 		</ul>
 	</div>
 </div>
-
-<?php
-if (have_posts()):
-	if (is_home() && !is_front_page()):
-		?>
-		<header>
-			<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-		</header>
-		<?php
-	endif;
-endif;
-?>
 
 <div class="article" id="maincontent">
 	<article class="has-edit-button" id="SkipTarget" tabindex="-1">
@@ -115,7 +97,7 @@ endif;
 					</h3>
 
 					<div class="row" style="margin-left: 0; margin-right: 0;">
-						<div class="large-4 medium-4 small-12 columns"
+						<div class="large-4 medium-4 small-12 columns home-chair-image-col"
 							style="padding-left: 0; padding-right: 1.5rem; margin-bottom: 1.5rem;">
 							<img src="<?php echo esc_url($geetangali_kale); ?>"
 								alt="Dr. Geetanjali Kale, ACM-W India Chair"
@@ -133,7 +115,7 @@ endif;
 							</p>
 						</div>
 
-						<div class="large-8 medium-8 small-12 columns" style="padding-left: 0; padding-right: 0;">
+						<div class="large-8 medium-8 small-12 columns home-chair-text-col" style="padding-left: 0; padding-right: 0;">
 							<p style="font-size: 0.9rem; line-height: 1.7; color: #000000; margin-bottom: 1.25rem;">
 								At ACM-W India, we believe that the full participation of women in computing is not just
 								an aspiration. It is a necessity. Our initiatives span grassroots student chapters and
@@ -183,8 +165,8 @@ endif;
 				<div
 					style="border-radius: 12px; overflow: hidden; margin-bottom: 4rem; box-shadow: 0 10px 30px rgba(0,0,0,0.1); font-family: 'Roboto', sans-serif;">
 					<!-- Row 1: Mission -->
-					<div style="display: flex; flex-wrap: wrap;">
-						<div
+					<div class="foundation-card-row" style="display: flex; flex-wrap: wrap;">
+						<div class="foundation-card-title-col"
 							style="width: 220px; background-color: #14294c; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 2.5rem 1rem; color: #fff;">
 							<div
 								style="width: 52px; height: 52px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.2); display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem; background-color: rgba(255,255,255,0.05);">
@@ -204,7 +186,7 @@ endif;
 							</div>
 							<span style="font-size: 0.8rem; font-weight: 700; letter-spacing: 1.5px;">MISSION</span>
 						</div>
-						<div
+						<div class="foundation-card-content-col"
 							style="flex: 1; background-color: #194a9b; padding: 2.5rem 3rem; color: #fff; min-width: 300px; display: flex; flex-direction: column; justify-content: center;">
 							<div
 								style="width: 30px; height: 2px; background-color: rgba(255,255,255,0.4); margin-bottom: 1rem;">
@@ -222,8 +204,8 @@ endif;
 					</div>
 
 					<!-- Row 2: Vision -->
-					<div style="display: flex; flex-wrap: wrap;">
-						<div
+					<div class="foundation-card-row" style="display: flex; flex-wrap: wrap;">
+						<div class="foundation-card-title-col"
 							style="width: 220px; background-color: #2357b9; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 2.5rem 1rem; color: #fff;">
 							<div
 								style="width: 52px; height: 52px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.3); display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem; background-color: rgba(255,255,255,0.1);">
@@ -236,7 +218,7 @@ endif;
 							</div>
 							<span style="font-size: 0.8rem; font-weight: 700; letter-spacing: 1.5px;">VISION</span>
 						</div>
-						<div
+						<div class="foundation-card-content-col"
 							style="flex: 1; background-color: #2a6cfb; padding: 2.5rem 3rem; color: #fff; min-width: 300px; display: flex; flex-direction: column; justify-content: center;">
 							<div
 								style="width: 30px; height: 2px; background-color: rgba(255,255,255,0.4); margin-bottom: 1rem;">
@@ -254,8 +236,8 @@ endif;
 					</div>
 
 					<!-- Row 3: Values -->
-					<div style="display: flex; flex-wrap: wrap;">
-						<div
+					<div class="foundation-card-row" style="display: flex; flex-wrap: wrap;">
+						<div class="foundation-card-title-col"
 							style="width: 220px; background-color: #192e52; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 2.5rem 1rem; color: #fff;">
 							<div
 								style="width: 52px; height: 52px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.2); display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem; background-color: rgba(255,255,255,0.05);">
@@ -268,7 +250,7 @@ endif;
 							</div>
 							<span style="font-size: 0.8rem; font-weight: 700; letter-spacing: 1.5px;">VALUES</span>
 						</div>
-						<div
+						<div class="foundation-card-content-col"
 							style="flex: 1; background-color: #112343; padding: 2.5rem 3rem; color: #fff; min-width: 300px; display: flex; flex-direction: column; justify-content: center;">
 							<div
 								style="width: 30px; height: 2px; background-color: rgba(255,255,255,0.4); margin-bottom: 1rem;">
@@ -390,15 +372,10 @@ endif;
 						</div>
 					</div>
 				</div>
-
-				<!-- Start a Student Chapter CTA (Modern Banner) -->
-
 			</div>
 			<?php get_sidebar('content_right'); ?>
 		</div>
 	</article>
-</div>
-
 </div>
 
 <script>

@@ -60,4 +60,30 @@
 			</a>
 		</div>
 
+		<!-- Quick Links Widget -->
+		<div class="widget quick-links-widget"
+			style="margin-bottom: 2rem; background-color: #fff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+			<h3 class="widget-title"
+				style="font-family: 'Roboto Condensed', Helvetica, Roboto, Arial, sans-serif; font-size: 20px; font-weight: 700; letter-spacing: 0; color: #0f172a; border-bottom: 2px solid #00b4d8; padding-bottom: 0.5rem; margin-bottom: 1rem;">
+				Quick Links</h3>
+			<ul style="list-style: none; padding: 0; margin: 0; font-size: 0.875rem;">
+				<li style="margin-bottom: 0.5rem;"><a href="https://women.acm.org" target="_blank" style="color: #0182ac; text-decoration: none; font-weight: 600;">ACM-W</a></li>
+				<li style="margin-bottom: 0.5rem;"><a href="https://www.acm.org" target="_blank" style="color: #0182ac; text-decoration: none; font-weight: 600;">ACM.org</a></li>
+				<li style="margin-bottom: 0.5rem;"><a href="https://women.acm.org/scholarships/" target="_blank" style="color: #0182ac; text-decoration: none; font-weight: 600;">Scholarships</a></li>
+				<li style="margin-bottom: 0.5rem;"><a href="https://women.acm.org/celebrations/" target="_blank" style="color: #0182ac; text-decoration: none; font-weight: 600;">Celebrations</a></li>
+				<li style="margin-bottom: 0.5rem;"><a href="https://women.acm.org/newsletter/" target="_blank" style="color: #0182ac; text-decoration: none; font-weight: 600;">Newsletter</a></li>
+			</ul>
+		</div>
+
+
+		<!-- Contact Widget -->
+		<div class="widget contact-widget"
+			style="margin-bottom: 2rem; background-color: #fff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+			<h3 class="widget-title"
+				style="font-family: 'Roboto Condensed', Helvetica, Roboto, Arial, sans-serif; font-size: 20px; font-weight: 700; letter-spacing: 0; color: #0f172a; border-bottom: 2px solid #00b4d8; padding-bottom: 0.5rem; margin-bottom: 1rem;">
+				Contact</h3>
+			<p style="font-size: 0.875rem; margin-bottom: 0.5rem; color: #334155;">✉️ <a href="mailto:acmwindia@acm.org" style="color: #0182ac; text-decoration: none; font-weight: 600;">acmwindia@acm.org</a></p>
+			<p style="font-size: 0.875rem; margin-bottom: 0; color: #334155;">🌐 <a href="https://women.acm.org" target="_blank" style="color: #0182ac; text-decoration: none; font-weight: 600;">women.acm.org</a></p>
+		</div>
+
 	</aside><!-- .sidebar .widget-area -->
