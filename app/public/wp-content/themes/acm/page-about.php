@@ -63,15 +63,33 @@ get_header();
 				</p>
 
 				<h3 style="text-align: left; font-weight: 700; font-size: 20px; margin-top: 2rem; margin-bottom: 1rem; color: #1e293b; font-family: 'Roboto Condensed', Helvetica, Roboto, Arial, sans-serif;">
-					Leadership (2025&ndash;2027)
+					Leadership
 				</h3>
 				<p style="font-size: 0.875rem; line-height: 1.6; margin-bottom: 1.25rem; color: #000000;">
-					ACM-W India is guided by a dedicated executive committee. For the term spanning July 1, 2025, to June 30, 2027, the leadership includes:
+					Office bearers of the ACM India-W Committee for the term 1 July 2025 to 30 June 2027 are:
+				</p>
+				<ul style="font-size: 0.875rem; line-height: 1.6; margin-bottom: 1.25rem; margin-left: 1.5rem; list-style-type: disc; color: #000000;">
+					<li style="margin-bottom: 0.5rem;"><strong>Chair:</strong> Geetanjali Kale, PICT, Pune</li>
+					<li style="margin-bottom: 0.5rem;"><strong>Vice-Chair:</strong> Alpana Dubey, Accenture, Bangalore</li>
+					<li style="margin-bottom: 0.5rem;"><strong>Secretary/Treasurer:</strong> Renuka Sindhghatta Rajan, IBM, Bangalore</li>
+					<li style="margin-bottom: 0.5rem;"><strong>Past Chair:</strong> Rutvi Shah, Ganpat University</li>
+				</ul>
+				<p style="font-size: 0.875rem; line-height: 1.6; margin-bottom: 1.25rem; color: #000000;">
+					<strong>Members-at-large: 1 July 2025 to 30 June 2027</strong>
+				</p>
+				<ul style="font-size: 0.875rem; line-height: 1.6; margin-bottom: 1.25rem; margin-left: 1.5rem; list-style-type: disc; color: #000000;">
+					<li style="margin-bottom: 0.5rem;">Jayashree Mohan, Microsoft Research, Bangalore</li>
+					<li style="margin-bottom: 0.5rem;">Mini Ulanat, CUSAT, Cochin</li>
+					<li style="margin-bottom: 0.5rem;">Sriparna Saha, IIT Patna, Patna</li>
+				</ul>
+				<p style="font-size: 0.875rem; line-height: 1.6; margin-bottom: 1.25rem; color: #000000;">
+					<strong>Members-at-large: 1 July 2025 to 30 June 2029</strong>
 				</p>
 				<ul style="font-size: 0.875rem; line-height: 1.6; margin-bottom: 2.5rem; margin-left: 1.5rem; list-style-type: disc; color: #000000;">
-					<li style="margin-bottom: 0.5rem;"><strong>Chair:</strong> Geetanjali Kale (PICT, Pune)</li>
-					<li style="margin-bottom: 0.5rem;"><strong>Vice-Chair:</strong> Alpana Dubey (Accenture, Bangalore)</li>
-					<li style="margin-bottom: 0.5rem;"><strong>Secretary/Treasurer:</strong> Renuka Sindhghatta Rajan (IBM, Bangalore)</li>
+					<li style="margin-bottom: 0.5rem;">Manik Gupta, BITS Pilani Hyderabad Campus, Hyderabad</li>
+					<li style="margin-bottom: 0.5rem;">Nita Thakare, Priyadarshini College of Engineering, Nagpur</li>
+					<li style="margin-bottom: 0.5rem;">Sachi Choudhary, UPES Dehradun, Uttarakhand</li>
+					<li style="margin-bottom: 0.5rem;">Sonia Garcha, CSpathshala, Pune</li>
 				</ul>
 			</div>
 

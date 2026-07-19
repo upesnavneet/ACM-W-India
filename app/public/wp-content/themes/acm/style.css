@@ -10844,3 +10844,7 @@ main > .columns {
   }
 }
 
+/* Hide WP Fast Total Search Score */
+.wpfts-score {
+    display: none !important;
+}

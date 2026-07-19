@@ -357,6 +357,7 @@ body.card-hovered .exec-card:not(.is-hovered) {
 						'name'    => 'Alpana Dubey',
 						'role'    => 'Vice- Chair, ACM India Women Committee | Accenture, Bangalore',
 						'initials'=> 'AD',
+						'photo'   => get_template_directory_uri() . '/img/executives/AlpanaDubey.png',
 						'quote'   => 'Alpana is the Innovation Research Principal Director at Accenture, leading AI and robotics R&D. She has nearly two decades of research experience and is dedicated to advancing tech ecosystems and mentorship.',
 					),
 					array(
@@ -369,6 +370,7 @@ body.card-hovered .exec-card:not(.is-hovered) {
 						'name'    => 'Sachi Choudhary',
 						'role'    => 'Member, ACM India Women Committee | UPES, Dehradun',
 						'initials'=> 'SC',
+						'photo'   => get_template_directory_uri() . '/img/executives/SachiChoudhary.webp',
 						'quote'   => 'Dr. Sachi is an Associate Professor at UPES and Faculty Coordinator of the UPES ACM-W Student Chapter. She has extensive experience teaching and researching data science, AI, and machine learning.',
 					),
 					array(
@@ -381,30 +383,35 @@ body.card-hovered .exec-card:not(.is-hovered) {
 						'name'    => 'Manik Gupta',
 						'role'    => 'Member, ACM India Women Committee | BITS Pilani Hyderabad Campus, Hyderabad',
 						'initials'=> 'MG',
+						'photo'   => get_template_directory_uri() . '/img/executives/ManikGupta.jpg',
 						'quote'   => 'Dr. Manik is an Associate Professor at BITS Pilani with academic research backgrounds at UCL and Queen Mary. She specializes in applying machine learning and IoT to real-world smart systems.',
 					),
 					array(
 						'name'    => 'Jayashree Mohan',
 						'role'    => 'Member, ACM India Women Committee | Microsoft Research, Bangalore',
 						'initials'=> 'JM',
+						'photo'   => get_template_directory_uri() . '/img/executives/JayashreeMohan.jpg',
 						'quote'   => 'Dr. Jayashree is a Senior Researcher at Microsoft Research, Bengaluru. Her research focuses on storage reliability, file systems, and building dependable, high-performance computing infrastructure.',
 					),
 					array(
 						'name'    => 'Nita Thakare',
 						'role'    => 'Member, ACM India Women Committee | Priyadarshini College of Engineering, Nagpur',
 						'initials'=> 'NT',
+						'photo'   => get_template_directory_uri() . '/img/executives/NitaThakare.jpg',
 						'quote'   => 'Dr. Nita is a Professor and Head of Computer Engineering at GGS College Nashik. With over two decades of academic leadership, she actively advances technical education and student mentorship.',
 					),
 					array(
 						'name'    => 'Mini Ulanat',
 						'role'    => 'Member, ACM India Women Committee | CUSAT, Cochin',
 						'initials'=> 'MU',
+						'photo'   => get_template_directory_uri() . '/img/executives/MiniUlanat.jpg',
 						'quote'   => 'Dr. Mini is associated with CUSAT, focusing on Social Network Analysis and Sentiment Analysis. She is an active community mentor, supporting national-level student computing and leadership initiatives.',
 					),
 					array(
 						'name'    => 'Sriparna Saha',
 						'role'    => 'Member, ACM India Women Committee | IIT Patna, Patna',
 						'initials'=> 'SS',
+						'photo'   => get_template_directory_uri() . '/img/executives/SriparnaSaha.jpg',
 						'quote'   => 'Dr. Sriparna is an Associate Professor at IIT Patna, specializing in AI, NLP, and Machine Learning. She is a Humboldt fellow with extensive contributions to international computing research.',
 					),
 				);
@@ -421,7 +428,7 @@ body.card-hovered .exec-card:not(.is-hovered) {
 							<?php endif; ?>
 						</div>
 						<div class="exec-card__desc-panel">
-							<p class="exec-card__quote">"<?php echo esc_html( $exec['quote'] ); ?>"</p>
+							<p class="exec-card__quote"><?php echo esc_html( $exec['quote'] ); ?></p>
 						</div>
 						<div class="exec-card__content">
 							<h3 class="exec-card__name"><?php echo esc_html( $exec['name'] ); ?></h3>
